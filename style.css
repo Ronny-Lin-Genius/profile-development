@@ -39,7 +39,8 @@ svg:hover {
   width: 100%;
 }
 .personal-info-section{
-  padding:120px 50px 50px 50px;
+  position: relative;
+  padding:120px 50px 150px 50px;
   background-image: url(./imgs/background2.jpg);
   background-size:cover;
   font-size: 16px;
@@ -65,8 +66,6 @@ svg:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.profile-title{
-}
 .profile-context{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -74,6 +73,17 @@ svg:hover {
 .profile-context-list{
   border-top: 3px white solid;
   padding-top: 5px;
+}
+.profile-btn{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  padding: 0px 30px 5px 30px;
+  width: 200px;
+  margin: auto;
+  color: white;
 }
 @media (max-width: 700px) {
   .profile-container{

@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0px;
   padding: 0px;
@@ -20,14 +21,14 @@ svg{
 svg:hover {
   fill: grey; /* Change the color on hover */
 }
+/* Navbar */
 .navbar{
   position: fixed;
   width: 100%;
   top: 0;
   padding: 10px 15px 10px 15px;
   background:rgba(255, 255, 255);
-  height: 75px;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar-brand img{
   width: 50px;
@@ -35,6 +36,8 @@ svg:hover {
 .navbar-toggler{
   border: none;
 }
+
+/* Personal Profile Section */
 .card-body img {
   width: 100%;
 }

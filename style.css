@@ -3,6 +3,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 400;
+  /* font-family: 'Roboto', sans-serif;} */
 }
 ul{
   list-style: none;
@@ -12,6 +15,9 @@ ul{
 a{
   text-decoration: none;
   color: gold;
+}
+img{
+  width: 100%;
 }
 svg{
   margin-right: 10px;
@@ -38,12 +44,9 @@ svg:hover {
 }
 
 /* Personal Profile Section */
-.card-body img {
-  width: 100%;
-}
 .personal-info-section{
   position: relative;
-  padding:120px 50px 150px 50px;
+  padding:120px 0px 150px 0px;
   background-image: url(./imgs/background2.jpg);
   background-size:cover;
   font-size: 16px;
@@ -74,7 +77,7 @@ svg:hover {
   margin-bottom: 10px;
 }
 .profile-context-list{
-  border-top: 3px white solid;
+  border-top: 3px black solid;
   padding-top: 5px;
 }
 .profile-btn{
@@ -87,6 +90,15 @@ svg:hover {
   width: 200px;
   margin: auto;
   color: white;
+}
+/* Previous-work-section */
+.previous-work-section{
+  /* background-color: #86a2c0; */
+}
+.previous-work-section-container{
+  /* padding: 0px 0px 50px 0px; */
+  max-width: 1080px;
+  margin: auto;
 }
 @media (max-width: 700px) {
   .profile-container{

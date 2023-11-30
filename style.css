@@ -91,12 +91,26 @@ svg:hover {
   margin: auto;
   color: white;
 }
+/* Interest Section */
+.interest-section-container{
+  max-width: 1080px;
+  margin: auto;
+}
+.interest-section-container img{
+  width: 50px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
 /* Previous-work-section */
 .previous-work-section{
-  /* background-color: #86a2c0; */
+  background-color: #86a2c0;
+  color: white;
+  padding-bottom: 20px;
 }
 .previous-work-section-container{
-  /* padding: 0px 0px 50px 0px; */
   max-width: 1080px;
   margin: auto;
 }

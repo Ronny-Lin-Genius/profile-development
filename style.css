@@ -1,11 +1,57 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  /* primary color*/
+  --clr-primary: #86a2c0;
+  --clr-primary-2: #f07b55;
+
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --clr-white: white;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
 /* General */
-* {
-  margin: 0px;
-  padding: 0px;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
   font-family: 'Fira Sans', sans-serif;
+  color: var(--clr-grey-1);
   font-size: 400;
-  /* font-family: 'Roboto', sans-serif;} */
+  line-height: 1.5;
 }
 ul{
   list-style: none;
@@ -14,7 +60,7 @@ ul{
 }
 a{
   text-decoration: none;
-  color: gold;
+  color: var(--clr-primary-2);
 }
 img{
   width: 100%;
@@ -25,9 +71,13 @@ svg{
   height: 40px;
 }
 svg:hover {
-  fill: grey; /* Change the color on hover */
+  fill: var(--clr-primary-2);
 }
-/* Navbar */
+/*
+=============== 
+Navbar
+===============
+*/
 .navbar{
   position: fixed;
   width: 100%;
@@ -42,8 +92,11 @@ svg:hover {
 .navbar-toggler{
   border: none;
 }
-
-/* Personal Profile Section */
+/*
+=============== 
+Personal Profile Section
+===============
+*/
 .personal-info-section{
   position: relative;
   padding:120px 0px 150px 0px;
@@ -51,7 +104,6 @@ svg:hover {
   background-size:cover;
   font-size: 16px;
   font-weight: 500;
-  color: black;
 }
 .personal-info-section-container{
   max-width: 1080px;
@@ -91,7 +143,11 @@ svg:hover {
   margin: auto;
   color: white;
 }
-/* Interest Section */
+/*
+=============== 
+Interest Section
+===============
+*/
 .interest-section-container{
   max-width: 1080px;
   margin: auto;
@@ -103,11 +159,12 @@ svg:hover {
   left: 50%;
   transform: translateX(-50%); 
 }
-
-/* Previous-work-section */
+/*
+=============== 
+Previous-work-section
+===============
+*/
 .previous-work-section{
-  background-color: #86a2c0;
-  color: white;
   padding-bottom: 20px;
 }
 .previous-work-section-container{
@@ -118,4 +175,50 @@ svg:hover {
   .profile-container{
     width: 100%;
   }
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+.footer{
+  background: var(--clr-primary);
+  padding: 50px 0px 100px 0px;
+  
+}
+.footer .container{
+  align-items: flex-start;
+  max-width: 1080px;
+  margin: auto;
+}
+.footer-column{
+  display: flex;
+  flex-direction: column;
+}
+.footer h2{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer h3{
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.support-link{
+  color: white;
+}
+.payment-image{
+  margin-top: 30px;
+  width: 60px;
+  padding: 10px;
+  background-color: white;
+}
+.social-images{
+  margin-top: 20px;
+}
+.social-image:nth-child(2){
+  margin-left: 10px;
 }
